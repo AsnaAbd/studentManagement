@@ -19,15 +19,26 @@
     	   }, function(msg){
     		        alert(msg);
     	   })
+         
+         $scope.loading = true;
 
-            $scope.addProfile = function(){
-                $scope.profiles.push($scope.newProfile);
-                Post.add($scope.newProfile).then(function(){
+         $scope.posts = Post.find().then(function(data){
+             $scope.loading = false;
+             $scope.posts = data;
+           }, function(msg){
+             alert(msg);
+           })
 
-                }, function(){
-                        alert('votre profile n est pas sauvgarder');
-                });
-                $scope.newProfile = {};
-            }
+           $scope.addProfile = function(){
+             $scope.posts.push({
+               $lastName: $scope.newProfile.lastName,
+               $firstname: $scope.newProfile.firstname,
+               $email: $scope.newProfile.email,
+               $password: $scope.newProfile.password,
+               $diplomas: $scope.newProfile.diplomas,
+               $promotion: $scope.newProfile.promotion
+           });
+             $scope.newProfile = {};
+         }
 
     });

@@ -19,15 +19,15 @@
        })
       .when('/createProfile', {
         templateUrl: 'views/createProfile.html',
-        controller: 'CommentsCtrl'
+        controller: 'ProfileCtrl'
         })
       .when('/editProfile', {
         templateUrl: 'views/editProfile.html',
-        controller: 'CommentsCtrl'
+        controller: 'ProfileCtrl'
         })
       .when('/authentification', {
         templateUrl: 'views/authentification.html',
-        controller: 'CommentsCtrl'
+        controller: 'MainCtrl'
         })
       .otherwise({
         redirectTo: '/'
