@@ -1,0 +1,33 @@
+
+<div ng-show="loading">Chargement</div>
+<div class="jumbotron">
+ <center><input type="text" class="form-control" placeholder="Search" ng-model="query"></center>
+</div>
+<h3><button class="btn btn-left" ng-click="order = 'firstname'">Order by name</button>
+<div class="pull-right"><button class="pull-left btn btn-left" ng-click="order = 'promotion'">Order by promotion</button></div>
+
+</h3>
+<div ng-hide="loading">
+	<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+        <th>Diplomas</th>
+        <th>Promotion</th>
+      </tr>
+    </thead>
+    <tbody>
+
+<tr ng-repeat="student in posts | filter:{firstname: query} | orderBy: order">
+
+            <td> <a href="#/comments/{{student._id}}">{{student.firstname}} </a></td>
+            <td> {{student.lastname}} </td>
+            <td> {{student.email}} </td>
+            <td> {{student.diplomas}} </td>
+            <td> {{student.promotion}} </td>
+</tr>
+</tbody>
+</table>
+</div>

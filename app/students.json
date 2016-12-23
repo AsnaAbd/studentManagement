@@ -1,0 +1,56 @@
+[
+  {
+    "_id": 1,
+    "firstname": "abderahman",
+    "lastname": "asna",
+    "email": "asna@gmail.com",
+    "password": "Telepark",
+    "diplomas": "Master",
+    "promotion": 2016
+  },
+  {
+    "_id": 2,
+    "firstname": "Katina",
+    "lastname": "Higgins",
+    "email": "katinahiggins@telepark.com",
+    "password": "Comfirm",
+    "diplomas": "DUT",
+    "promotion": 2011
+  },
+  {
+    "_id": 7,
+    "firstname": "Mcknight",
+    "lastname": "Gray",
+    "email": "mcknightgray@comfirm.com",
+    "password": "Sportan",
+    "diplomas": "DESS",
+    "promotion": 2012
+  },
+  {
+    "_id": 0,
+    "firstname": "Ingram",
+    "lastname": "Nelson",
+    "email": "ingramnelson@sportan.com",
+    "password": "Qualitex",
+    "diplomas": "Licence",
+    "promotion": 2012
+  },
+  {
+    "_id": 0,
+    "firstname": "Mendoza",
+    "lastname": "Edwards",
+    "email": "mendozaedwards@qualitex.com",
+    "password": "Elpro",
+    "diplomas": "Ingénieur ",
+    "promotion": 2001
+  },
+  {
+    "_id": 4,
+    "firstname": "Rivera",
+    "lastname": "Ellis",
+    "email": "riveraellis@elpro.com",
+    "password": "Primordia",
+    "diplomas": "Maitrise",
+    "promotion": 2016
+  }
+]
